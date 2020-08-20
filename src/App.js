@@ -6,6 +6,8 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import moment from "moment";
 
+import {Login} from './components/Login.js';
+
 class App extends Component {
 
     constructor(props) {
@@ -26,9 +28,10 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo"/>
                     <h1 className="App-title">TODO React App</h1>
                 </header>
-
                 <br/>
                 <br/>
+                <Login/>
+                
                 <form onSubmit={this.handleSubmit} className="todo-form">
                     <h3>New TODO</h3>
                     <label htmlFor="text" className="right-margin">
