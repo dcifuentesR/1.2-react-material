@@ -42,6 +42,7 @@ export class Login extends React.Component{
                                 />
                             </FormControl>
                             <Button
+                                onClick={(event) => {event.preventDefault();this.props.handleLogin(document.getElementById("email").value,document.getElementById("password").value)}}
                                 type="submit"
                                 fullWidth
                                 variant="contained"
